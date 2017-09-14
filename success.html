@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>成功案例</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="copyright" content="">
+		<meta name="generator" content="">
+		<link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<script src="js/index.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--顶部开始-->
+		<div class="topbar">
+			<div class="w clearfix">
+				<div class="logn">
+					<a href=""><img src="img/logn.png" alt="">
+					</a>
+				</div>
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Synthesis of spine.." class="search-box">
+						<input type="submit" class="search-btn" value="">
+					</form>
+				</div>
+				<div class="phone visible-lg-block">
+					客服热线：
+					<p>7743991768</p>
+				</div>
+				<a href="" class="en-zn visible-lg-block">简体中文</a>
+			</div>
+		</div>
+		<!--顶部结束-->
+
+		<!--侧边栏开始-->
+		<div class="left-nav">
+			<div class="swiper-slide menu">
+				<ul>
+					<li>
+						<a href="">首 页 </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">关于净派 </a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="active">
+						<a href="javascript:void(0);">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">感控预防应用</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">案例分享</a>
+					</li>
+					<li>
+						<a href="">招贤纳士</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">客户服务</a>
+					</li>
+					<li class="end">
+						<a href="javascript:void(0);">关闭</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".swiper-slide > ul > li").on("click", function() {
+					$(this).toggleClass("active").find(".classify").slideToggle();
+
+				})
+				$(".end").on("click", function() {
+					$(".menu-button").removeClass("crosss")
+					$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+					},500)
+					bool = true;
+
+				})
+				var bool = true;
+				$(".menu-button").on("click", function() {
+					$(this).toggleClass("crosss")
+					if(bool){
+						$(".left-nav .swiper-slide").animate({
+						"left":"0%"
+						},500)
+						bool=false;
+						
+					}
+					else {
+						$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+						},500);
+						bool = true;
+					}
+					
+
+				})
+
+			})
+		</script>
+
+		<!--侧边栏结束-->
+
+		<!--头部导航开始-->
+
+		<div class="head-nav visible-lg-block">
+			<div class="w">
+				<ul>
+					<li>
+						<a href="index.html">首 页</a>
+					</li>
+					<li>
+						<a href="ahout.html">关于净派</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="products.html">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="product_item.html">感控预防应用</a>
+					</li>
+					<li class="active">
+						<a href="success.html">案例分享</a>
+					</li>
+					<li>
+						<a href="zhaopin.html">招贤纳士</a>
+					</li>
+					<li>
+						<a href="liuyan.html">在线留言</a>
+					</li>
+					<li>
+						<a href="fuwu.html">客户服务</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--头部导航结束-->
+
+		<!--banner轮播开始-->
+
+		<div class="banner">
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img1.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-active">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img2.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img3.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img4.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img5.jpg"></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var swiper = new Swiper('.banner .swiper-container', {
+					pagination: '.banner .swiper-pagination',
+					slidesPerView: 1,
+					paginationClickable: true,
+					autoplay: 2500,
+					autoplayDisableOnInteraction: false,
+					loop: true,
+
+				});
+			})
+		</script>
+		<!--banner轮播结束-->
+
+		<!--成功案例页开始-->
+		<div class="wrap">
+			<div class="w clearfix">
+				<div class="nav-fl">
+					<h4>案例分享 <span>Case sharing</span></h4>
+					<ul class="clearfix">
+						<li class="active">
+							<a href="#">世界卫生大会</a>
+						</li>
+						<li class="">
+							<a href="#">光创物表探头</a>
+						</li>
+						<li class="">
+							<a href="#">感控预防应用</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="main-fr">
+					<div class="title">
+						<div class="path">
+							您的当前位置：
+							<a href="index.html">首页</a><i>&gt;</i>
+							<a href="" class="">案例分享</a><i>&gt;</i>
+							<a href="" class="color">世界卫生大会</a>
+							
+							
+						</div>
+					</div>
+					<div class="content" id="success">
+						<h3>世界卫生大会</h3>
+						<p class="date">2017-08-11</p>
+						<div class="img">
+							<img src="img/success_img1.png" alt="">
+						</div>
+						<div class="jieshao">
+													<p class="text">净派复合双链季铵盐采用德国进口，全国医院采购净派B超探头消毒湿巾。环境物体表面的污染和医院感染之间密不可分，因此环境表面的清洁与消毒日益受到重视，随之应运而生的一个产品--消毒湿巾。作为环境表面清洁和消毒的利器，一次性医用复合双链季铵消毒湿巾现已被国际上医疗机构医院广泛使用，并受到国际权威机构和医院感控领域的青睐认可。目前国内医院物表消毒湿巾市场刚刚开始推广运用，存在很多理念、功效、质量差异，如今市面上消毒湿巾产品种类繁多，医院应当依据规范制度对其进行监管，净派为了方便大家容易解读，分享消毒湿巾一些国家文件及临床案例。</p>
+						<p class="text">为什么净派与德国合作，使用德国进口季铵盐消毒液？</p>
+						<p class="text">1935年，德国 Domagk 研究了这类消毒的杀菌性能及化学结构与制菌的关系，引起人们极大的兴趣。同年 Wetzel 即用于临床消毒实践。随后对这类消毒药物研究的人接踵而至，逐渐广泛用于医院的皮肤粘膜消毒、外科洗手消毒和医疗器械消毒，也用于各种公共场所和生产各行来中的用具和设备的消毒，季铵盐类消毒剂的杀微生物机制季铵盐类化合物为阳离子表面活性剂，可改变细菌胞浆膜的通透性，使菌体物质外渗，阻碍其代谢而使细菌死亡。对大肠杆菌、金黄葡萄球菌、白色念珠菌等杀菌率99.99%，国际上多采用德国研发的季铵盐消毒液，因为无毒无色无味，非常安全，有持续杀菌作用，可达到24小时等优势。
+ 浸泡毛巾擦拭消毒法基本一致,但使用一次性复合双链季铵消毒湿巾操作简单、节省人力、且无刺激性和损坏性。
+结论：一次性复合双链季铵消毒湿巾对医院内普通物体表面消毒具有较好的效果,使用方便和更加安全。</p>
+						<p class="text">3、 一次性医用消毒湿巾在中医火罐消毒中的运用</p>
+						<p class="text">一次性医用复合双链季铵消毒湿巾在火罐消毒中的应用.</p>
+						<p class="text">方法：比较3种不同消毒方法的消毒时间、消毒效果和成本差异.结果消毒时间:复合双链季铵消毒湿巾组为3min,75％乙醇纱布组为9min,含氯制剂组为40 min,组间比较,差畀有统计学意义(P＜0.01);消毒效果合格率:复合双链季铵消毒湿巾组和含氯制剂组为100％,75％乙醇纱布组为98％。</p>
+						<p class="text">结论：一次性医用复合双链季铵消毒湿巾用于连续使用中的中医火罐消毒,较使用乙醇和含氯制剂消毒更节省时间,经细菌培养证明其消毒效果可靠。</p>
+
+						</div>
+						<div class="url">
+							<a href="" class="prev">上一篇： 没有了</a>
+							<a href="" class="next">下一篇： 【知识篇】热缩电缆附件和.....</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--成功案例页结束-->
+
+		<!--底部开始-->
+		<div class="footer">
+			<div class="w">
+				<div class="footer-nav">
+					<ul>
+						<li>
+							<a href="">首 页</a>
+						</li>
+						<li>
+							<a href="">公司简介</a>
+						</li>
+						<li>
+							<a href="">产品分类</a>
+						</li>
+						<li>
+							<a href="">感控预防应用</a>
+						</li>
+						<li>
+							<a href="">案例分享</a>
+						</li>
+						<li>
+							<a href="">招贤纳士</a>
+						</li>
+						<li>
+							<a href="">客户服务</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-main clearfix">
+
+					<div class="lianxi">
+						<dl>
+							<dt>24小时客服热线：020-36306018</dt>
+							<dd>联系地址：广州市白云区机场路585号鹏景大厦</dd>
+							<dd>进出口代理：德国基里安贸易公司</dd>
+						</dl>
+					</div>
+					<div class="ewm">
+						<img src="img/erweima.png">
+
+					</div>
+
+				</div>
+				<p class="url">
+					友情链接：
+					<a href="">广州桶装湿纸巾生产厂家</a>
+					技术支持：
+					<a href="">广东烽火</a>
+				</p>
+				<p>Copyright ©2017 保留所有权利。 广州公安网安备 11010502008968 粤ICP备09187967号</p>
+			</div>
+		</div>
+	</body>
+
+</html>

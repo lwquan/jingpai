@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="copyright" content="">
+		<meta name="generator" content="">
+		<link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<script src="js/index.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--顶部开始-->
+		<div class="topbar">
+			<div class="w clearfix">
+				<div class="logn">
+					<a href=""><img src="img/logn.png" alt="">
+					</a>
+				</div>
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Synthesis of spine.." class="search-box">
+						<input type="submit" class="search-btn" value="">
+					</form>
+				</div>
+				<div class="phone visible-lg-block">
+					客服热线：
+					<p>7743991768</p>
+				</div>
+				<a href="" class="en-zn visible-lg-block">简体中文</a>
+			</div>
+		</div>
+		<!--顶部结束-->
+
+		<!--侧边栏开始-->
+		<div class="left-nav">
+			<div class="swiper-slide menu">
+				<ul>
+					<li>
+						<a href="">首 页 </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">关于净派 </a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">感控预防应用</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">案例分享</a>
+					</li>
+					<li>
+						<a href="">招贤纳士</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">客户服务</a>
+					</li>
+					<li class="end">
+						<a href="javascript:void(0);">关闭</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".swiper-slide > ul > li").on("click", function() {
+					$(this).toggleClass("active").find(".classify").slideToggle();
+
+				})
+				$(".end").on("click", function() {
+					$(".menu-button").removeClass("crosss")
+					$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+					},500)
+					bool = true;
+
+				})
+				var bool = true;
+				$(".menu-button").on("click", function() {
+					$(this).toggleClass("crosss")
+					if(bool){
+						$(".left-nav .swiper-slide").animate({
+						"left":"0%"
+						},500)
+						bool=false;
+						
+					}
+					else {
+						$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+						},500);
+						bool = true;
+					}
+					
+
+				})
+
+			})
+		</script>
+
+		<!--侧边栏结束-->
+
+		<!--头部导航开始-->
+
+		<div class="head-nav visible-lg-block">
+			<div class="w">
+				<ul>
+					<li>
+						<a href="index.html">首 页</a>
+					</li>
+					<li class="active">
+						<a href="ahout.html">关于净派</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="products.html">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="product_item.html">感控预防应用</a>
+					</li>
+					<li>
+						<a href="success.html">案例分享</a>
+					</li>
+					<li>
+						<a href="zhaopin.html">招贤纳士</a>
+					</li>
+					<li>
+						<a href="liuyan.html">在线留言</a>
+					</li>
+					<li>
+						<a href="fuwu.html">客户服务</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--头部导航结束-->
+
+	
+
+		<!--banner轮播开始-->
+
+		<div class="banner">
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img1.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-active">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img2.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img3.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img4.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img5.jpg"></a>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var swiper = new Swiper('.banner .swiper-container', {
+					pagination: '.banner .swiper-pagination',
+					slidesPerView: 1,
+					paginationClickable: true,
+					autoplay: 2500,
+					autoplayDisableOnInteraction: false,
+					loop: true,
+
+				});
+			})
+		</script>
+		<!--banner轮播结束-->
+		
+		<!--关于我们页-->
+		
+		<!--关于我们开始-->
+		<div class="wrap">
+			<div class="w clearfix">
+				<div class="nav-fl">
+					<h4>关于净派 <span>Contact us</span></h4>
+					<ul class="clearfix">
+						<li class="active"><a href="#">公司简介</a></li>						
+						<li class=""><a href="wenhua.html">公司文化</a></li>						
+					</ul>
+				</div>
+				<div class="main-fr">
+					<div class="title">
+						<div class="path">
+							您的当前位置：<a href="index.html">首页</a><i>&gt;</i>
+							<a href="" class="color">公司简介</a>
+						</div>
+					</div>
+					<div class="content" id="about">
+						<h3>公司简介</h3>
+						<div class="img">
+							<img src="img/about_img1.png">
+						</div>
+						<div class="text">
+							<p class="mb">广州净派保洁消毒用品有限公司是一家专业医用级湿巾制造商，致力于医用环保消毒产品的研发、生产、销售为一体的正规企业，拥有自主品牌和技术产权，是通过国家认证的专业生产各种卫生消毒用品厂家，净派公司2009与德国基里安贸易公司合作，引进德国先进的环保技术和科技配方，产品由德国玛普实验室（Max-p)提供专注于医院感染控制产品的研发，主要产品以医疗器械物表消毒和医疗设备表面消毒医用杀菌型湿巾和人体清洁消毒护理湿巾、各种仪器、器械。电子产品等专用防静电湿纸巾等。</p>
+							<p class="mb">公司有专业的研发团队，长期致力于微生物和感染控制的研究，产品在行业领域被称为第一领导品牌，覆盖众多三甲医院，产品被美国第二大药业公司葛兰素史克作为消毒湿纸巾的金牌供应商，也是美国最大的也是世界最大的巧克力公司好时巧克力公司的清洁消毒湿纸巾和免洗消毒洗手液的优质供应商。 专业服务一万家医疗机构，专业的医用湿巾制造商。</p>
+							<p class="ti">公司产品源于德国，服务中国的的理念，在中国普及医用产品民用化，为中国最专业的首个行业品牌，旗下有眼镜消毒的（眼净）注册商标，（净派夫人）注册商标，净派等诸多商标，在国内做早拥有行业品牌的医用卫生产品。产品系列齐全，涵盖了各种湿巾和消毒剂，广泛应用于物表和医疗设备表面的清洁消毒，皮肤护理，产品主要应用于医院，口腔诊所，生物实验室，护理院及家庭，宠物治疗室，专业药店等。</p>
+							<p class="ti">公司引进德国先进环保技术和配方，把化学及生物科学融为一体的现代生物技术运用到杀菌消毒、促进健康环保领域的公司，净派担负着健康生活”的使命，致力成为健康环保的一次性清洁消毒杀菌产品的领导者和倡导者，打造“世界级的净派环保产品品牌”。</p>
+							<p class="mb ti">净派保洁是新型的环保企业，以健康保护，预防疾病为目的，研发与生产结合、营销与服务并重，为广大用户提供专业高效、安全无毒、方便经济及环保节约的新型清洁消毒除菌系列产品，快速消毒杀菌免洗洗手液、免洗消毒湿纸巾等系列产品、免洗消毒洗手液等，为企业和家庭提供全面环境净化、清洁消毒服务系统解决方案。产品自面世以来，行销全国各行业，得到广大用户的普遍赞誉。</p>
+							<p class="ti">净派系列产品采用德国马普实验室（Max-P）先进环保灭菌技术生产, 独特的BS生物抑菌因子，填补了国内行业空白。产品包括办公、家庭、便携、户外、环境消毒等多个类型，可广泛用于日常办公用品消毒和家居生活环境消毒，适合不同行业需求，不同人群以及环境使用。产品已通过权威机构TÜV RG和CNAS的测试检验杀菌99.99%，经过广东省疾控中心监测杀菌99,99%，具有ADM CNAS国际出口资格，产品对预防H1N1 H7N9禽流感病毒疫情，SARS非典等细菌病毒传播有抑制作用。是健康环保、高效清洁杀菌的专业产品，是国内专业的首家个人清洁护理品牌产品。</p>
+							<p>产品常年出口美国、荷兰、比利时、意大利、迪拜等世界各地， 欢迎国内外朋友前来洽谈出口、代理合作，企事业团购，净派保洁质量、品质、服务做到没有最好，只有更好的理念！</p>
+							<p class="mb ti">净派系列产品国内生产厂家独有的生产技术，无水处理、防静电、消毒擦拭物品无残留，对手机、电脑、眼镜、 3D眼镜、相机学习机、LED等电子产品有独一无二的消毒杀菌效果，在自然条件下可自动降解，对环境无污染，符合当今环保节能、低碳趋势，节约水资源，对广大人民群众日益增长的健康生活品质的需求有更深的意义。</p>
+							<p class="mb ti">净派系列产品采用安全的医用配方，比一般的日化产品更更专业、更快速、更方便、更有效。可有效抑制流感、非典、禽流感、口蹄疫、手足口病，H1N1等病毒细菌对人类的侵袭；对大肠杆菌、金黄色葡萄球菌、化脓性球菌、致病性酵母菌，白色念珠菌等八大细菌病毒有显著杀灭作用；对预防H1N1 H7N9禽流感病毒及非典的细菌传播有消毒杀菌抑制功效，在灾后防疫灭菌方面也具有显著效果。产品经广东省权威机构疾控中心检测杀菌率99.99%。</p>
+							<p class="mb ti">净派保洁让医用消毒杀菌产品民用化，省去用消毒剂勾兑水的繁琐配置程序，让人们在轻松愉悦的心情下，快捷简单的拥有健康的环境和洁净的生活状态。轻松清洁、快乐杀菌。净派洁净、呵护你我。</p>
+							<p class="mb ti">净 派 --- 缔造健康美好新生活!</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!--关于我们结束-->
+			
+		<!--底部开始-->
+		<div class="footer">
+			<div class="w">
+				<div class="footer-nav">
+					<ul>
+						<li>
+							<a href="">首 页</a>
+						</li>
+						<li>
+							<a href="">公司简介</a>
+						</li>
+						<li>
+							<a href="">产品分类</a>
+						</li>
+						<li>
+							<a href="">感控预防应用</a>
+						</li>
+						<li>
+							<a href="">案例分享</a>
+						</li>
+						<li>
+							<a href="">招贤纳士</a>
+						</li>
+						<li>
+							<a href="">客户服务</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-main clearfix">
+
+					<div class="lianxi">
+						<dl>
+							<dt>24小时客服热线：020-36306018</dt>
+							<dd>联系地址：广州市白云区机场路585号鹏景大厦</dd>
+							<dd>进出口代理：德国基里安贸易公司</dd>
+						</dl>
+					</div>
+					<div class="ewm">
+						<img src="img/erweima.png">
+
+					</div>
+
+				</div>
+				<p class="url">
+					友情链接：
+					<a href="">广州桶装湿纸巾生产厂家</a>
+					技术支持：
+					<a href="">广东烽火</a>
+				</p>
+				<p>Copyright ©2017 保留所有权利。 广州公安网安备 11010502008968 粤ICP备09187967号</p>
+			</div>
+		</div>
+	</body>
+
+</html>

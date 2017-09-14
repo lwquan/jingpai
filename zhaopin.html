@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>招贤纳士</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="copyright" content="">
+		<meta name="generator" content="">
+		<link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<script src="js/index.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--顶部开始-->
+		<div class="topbar">
+			<div class="w clearfix">
+				<div class="logn">
+					<a href=""><img src="img/logn.png" alt="">
+					</a>
+				</div>
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Synthesis of spine.." class="search-box">
+						<input type="submit" class="search-btn" value="">
+					</form>
+				</div>
+				<div class="phone visible-lg-block">
+					客服热线：
+					<p>7743991768</p>
+				</div>
+				<a href="" class="en-zn visible-lg-block">简体中文</a>
+			</div>
+		</div>
+		<!--顶部结束-->
+
+		<!--侧边栏开始-->
+		<div class="left-nav">
+			<div class="swiper-slide menu">
+				<ul>
+					<li>
+						<a href="">首 页 </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">关于净派 </a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="active">
+						<a href="javascript:void(0);">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">感控预防应用</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">案例分享</a>
+					</li>
+					<li>
+						<a href="">招贤纳士</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">客户服务</a>
+					</li>
+					<li class="end">
+						<a href="javascript:void(0);">关闭</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".swiper-slide > ul > li").on("click", function() {
+					$(this).toggleClass("active").find(".classify").slideToggle();
+
+				})
+				$(".end").on("click", function() {
+					$(".menu-button").removeClass("crosss")
+					$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+					},500)
+					bool = true;
+
+				})
+				var bool = true;
+				$(".menu-button").on("click", function() {
+					$(this).toggleClass("crosss")
+					if(bool){
+						$(".left-nav .swiper-slide").animate({
+						"left":"0%"
+						},500)
+						bool=false;
+						
+					}
+					else {
+						$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+						},500);
+						bool = true;
+					}
+					
+
+				})
+
+			})
+		</script>
+		
+
+		<!--侧边栏结束-->
+
+		<!--头部导航开始-->
+
+		<div class="head-nav visible-lg-block">
+			<div class="w">
+				<ul>
+					<li>
+						<a href="index.html">首 页</a>
+					</li>
+					<li>
+						<a href="ahout.html">关于净派</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="products.html">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="product_item.html">感控预防应用</a>
+					</li>
+					<li>
+						<a href="success.html">案例分享</a>
+					</li>
+					<li class="active">
+						<a href="zhaopin.html">招贤纳士</a>
+					</li>
+					<li>
+						<a href="liuyan.html">在线留言</a>
+					</li>
+					<li>
+						<a href="fuwu.html">客户服务</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--头部导航结束-->
+
+		<!--banner轮播开始-->
+
+		<div class="banner">
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img1.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-active">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img2.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img3.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img4.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img5.jpg"></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var swiper = new Swiper('.banner .swiper-container', {
+					pagination: '.banner .swiper-pagination',
+					slidesPerView: 1,
+					paginationClickable: true,
+					autoplay: 2500,
+					autoplayDisableOnInteraction: false,
+					loop: true,
+
+				});
+			})
+		</script>
+		<!--banner轮播结束-->
+
+		<!--招贤纳士页开始-->
+		<div class="wrap">
+			<div class="w clearfix">
+				<div class="nav-fl">
+					<h4>客户服务 <span>customer service</span></h4>
+					<ul class="clearfix">
+						<li>
+							<a href="fuwu.html">联系我们</a>
+						</li>
+						<li class="active">
+							<a href="#">招贤纳士</a>
+						</li>
+						<li class="">
+							<a href="liuyan.html">在线留言</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="main-fr">
+					<div class="title">
+						<div class="path">
+							您的当前位置：
+							<a href="index.html">首页</a><i>&gt;</i>
+							<a href="" class="">客户服务</a><i>&gt;</i>
+							<a href="" class="color">招贤纳士</a>
+						</div>
+					</div>
+					<div class="content" id="zhaopin">
+						<h3>招贤纳士</h3>
+						<div class="img">
+							<img src="img/zhaopin_img1.png" alt="">
+						</div>
+						<div class="text">
+							<dl>
+								<dt>营销总监</dt>
+								<dd>1、<span>三年以上高级管理或教育行业工作经验；具有团队管理经验，良好的职业素质与责任心；</span></dd>
+								<dd>2、<span>全面负责培训中心的各项工作包括市场、销售、教务、教学及行政管理等；</span></dd>
+								<dd>3、<span>根据总部的要求对当地市场进行全方位和深度的开发；</span></dd>
+								<dd>4、<span>具有一定的销售经验，能带领团队完成总校赋予的业绩指标；</span></dd>
+								<dd>5、<span>有独立的分析和解决问题的能力，头脑灵活；</span></dd>
+								<dd>6、<span>管理整个分校，协调各部门的工作，保证分校的整体运作；</span></dd>
+								<dd>7、<span>负责分校人员的业绩考核；</span></dd>
+								<dd>8、<span>统计分析各项数据，汇总总校；</span></dd>
+							</dl>
+							<dl>
+								<dt>总经理秘书</dt>
+								<dd>1、<span>正规院校国家统招本科以上学历(条件优秀者可放宽)，工作经验5年以上，管理岗位经验3年以上， 
+      有教育培训行业市场开拓或管理经验者优先；</span></dd>
+								<dd>2、<span>有执行力，对教育培训市场具有敏锐的洞察力，具有很强的市场开拓能力；</span></dd>
+								<dd>3、<span>热爱教育培训事业，具有良好的职业操守和服务精神，较强的经营管理能力及团队整合能力，有分
+     校筹建的工作能力，有成本概念和成本控制意识；</span></dd>
+								<dd>4、<span>具有团队合作，吃苦耐劳的精神，独立处理解决问题的能力，能够承受一定的工作压力；</span></dd>
+								<dd>5、<span>具有良好的职业素质和团队管理能力，沟通协调能力强；；</span></dd>
+								<dd>6、<span>成熟稳重，工作细致，责任心强，善于建立校内及校外良好的工作关系。</span></dd>
+								<dd>7、<span>负责分校人员的业绩考核；</span></dd>
+								<dd>8、<span>统计分析各项数据，汇总总校；</span></dd>
+							</dl>
+							<dl>
+								<dt>销售经理</dt>
+								<dd>1、<span>正规院校国家统招本科以上学历(条件优秀者可放宽)，工作经验5年以上，管理岗位经验3年以上， 
+      有教育培训行业市场开拓或管理经验者优先；</span></dd>
+								<dd>2、<span>有执行力，对教育培训市场具有敏锐的洞察力，具有很强的市场开拓能力；</span></dd>
+								<dd>3、<span>热爱教育培训事业，具有良好的职业操守和服务精神，较强的经营管理能力及团队整合能力，有分
+     校筹建的工作能力，有成本概念和成本控制意识；</span></dd>
+								<dd>4、<span>具有团队合作，吃苦耐劳的精神，独立处理解决问题的能力，能够承受一定的工作压力；</span></dd>
+								<dd>5、<span>具有良好的职业素质和团队管理能力，沟通协调能力强；；</span></dd>
+								<dd>6、<span>成熟稳重，工作细致，责任心强，善于建立校内及校外良好的工作关系。</span></dd>
+								<dd>7、<span>负责分校人员的业绩考核；</span></dd>
+								<dd>8、<span>统计分析各项数据，汇总总校；</span></dd>
+							</dl>
+
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--招贤纳士页结束-->
+
+		<!--底部开始-->
+		<div class="footer">
+			<div class="w">
+				<div class="footer-nav">
+					<ul>
+						<li>
+							<a href="">首 页</a>
+						</li>
+						<li>
+							<a href="">公司简介</a>
+						</li>
+						<li>
+							<a href="">产品分类</a>
+						</li>
+						<li>
+							<a href="">感控预防应用</a>
+						</li>
+						<li>
+							<a href="">案例分享</a>
+						</li>
+						<li>
+							<a href="">招贤纳士</a>
+						</li>
+						<li>
+							<a href="">客户服务</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-main clearfix">
+
+					<div class="lianxi">
+						<dl>
+							<dt>24小时客服热线：020-36306018</dt>
+							<dd>联系地址：广州市白云区机场路585号鹏景大厦</dd>
+							<dd>进出口代理：德国基里安贸易公司</dd>
+						</dl>
+					</div>
+					<div class="ewm">
+						<img src="img/erweima.png">
+
+					</div>
+
+				</div>
+				<p class="url">
+					友情链接：
+					<a href="">广州桶装湿纸巾生产厂家</a>
+					技术支持：
+					<a href="">广东烽火</a>
+				</p>
+				<p>Copyright ©2017 保留所有权利。 广州公安网安备 11010502008968 粤ICP备09187967号</p>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="copyright" content="">
+		<meta name="generator" content="">
+		<link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<script src="js/index.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--顶部开始-->
+		<div class="topbar">
+			<div class="w clearfix">
+				<div class="logn">
+					<a href=""><img src="img/logn.png" alt="">
+					</a>
+				</div>
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Synthesis of spine.." class="search-box">
+						<input type="submit" class="search-btn" value="">
+					</form>
+				</div>
+				<div class="phone visible-lg-block">
+					客服热线：
+					<p>7743991768</p>
+				</div>
+				<a href="" class="en-zn visible-lg-block">简体中文</a>
+			</div>
+		</div>
+		<!--顶部结束-->
+
+		<!--侧边栏开始-->
+		<div class="left-nav">
+			<div class="swiper-slide menu">
+				<ul>
+					<li>
+						<a href="">首 页 </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">关于净派 </a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">感控预防应用</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+								<li>
+									<a href="">5</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">案例分享</a>
+					</li>
+					<li>
+						<a href="">招贤纳士</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">客户服务</a>
+					</li>
+					<li class="end">
+						<a href="javascript:void(0);">关闭</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".swiper-slide > ul > li").on("click", function() {
+					$(this).toggleClass("active").find(".classify").slideToggle();
+
+				})
+				$(".end").on("click", function() {
+					$(".menu-button").removeClass("crosss")
+					$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+					},500)
+					bool = true;
+
+				})
+				var bool = true;
+				$(".menu-button").on("click", function() {
+					$(this).toggleClass("crosss")
+					if(bool){
+						$(".left-nav .swiper-slide").animate({
+						"left":"0%"
+						},500)
+						bool=false;
+						
+					}
+					else {
+						$(".left-nav .swiper-slide").animate({
+						"left":"-70%"
+						},500);
+						bool = true;
+					}
+					
+
+				})
+
+			})
+		</script>
+
+
+		
+
+		<!--侧边栏结束-->
+
+		<!--头部导航开始-->
+
+		<div class="head-nav visible-lg-block">
+			<div class="w">
+				<ul>
+					<li class="active">
+						<a href="index.html">首 页</a>
+					</li>
+					<li>
+						<a href="ahout.html">关于净派</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="products.html">产品分类</a>
+						<div class="classify">
+							<ul>
+								<li>
+									<a href="">1</a>
+								</li>
+								<li>
+									<a href="">2</a>
+								</li>
+								<li>
+									<a href="">3</a>
+								</li>
+								<li>
+									<a href="">4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="product_item.html">感控预防应用</a>
+					</li>
+					<li>
+						<a href="success.html">案例分享</a>
+					</li>
+					<li>
+						<a href="zhaopin.html">招贤纳士</a>
+					</li>
+					<li>
+						<a href="liuyan.html">在线留言</a>
+					</li>
+					<li>
+						<a href="fuwu.html">客户服务</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--头部导航结束-->
+
+		<!--轮播图开始-->
+
+		<!--banner轮播开始-->
+
+		<div class="banner">
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img1.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-active">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img2.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img3.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img4.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-zoom-container">
+							<a href="#"><img src="img/banner_img5.jpg"></a>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var swiper = new Swiper('.banner .swiper-container', {
+					pagination: '.banner .swiper-pagination',
+					slidesPerView: 1,
+					paginationClickable: true,
+					autoplay: 2500,
+					autoplayDisableOnInteraction: false,
+					loop: true,
+
+				});
+			})
+		</script>
+		<!--banner轮播结束-->
+
+		<!--轮播图结束-->
+		<!--品牌介绍-->
+		<div class="about-sy">
+			<div class="w clearfix">
+				<div class="video">
+					<img src="img/video_bg.jpg">
+					<video class="hide" src="video/G.ride .mp4"></video>
+				</div>
+				<div class="main-fl">
+					<h3>品牌介绍</h3>
+					<p class="text">净派保洁消毒用品有限公司成立于2010年，公司总部位于广东省广州市，公司以专业、专注、专心、严谨的态度、专业生产高品质的医用级消毒杀菌型湿巾、成人纸尿裤等系列产品，长效抗菌材料医用护理免水浴巾等，净派用爱经营用心服务的理念，为全球提供最优质产品，引进来自德国科技技术，追求精益求精的工匠精神，认真做好行业精品！净派医疗结合中国医疗市场的需求不断创新和升级，推出新品精品和引领消毒行业颠覆只用消毒液消毒物表的唯一性，创新改革，做感控预防的新领域！</p>
+					<a href="" class="more">了解更多</a>
+				</div>
+
+				<script type="text/javascript">
+					$(function() {
+						$(".video").on("click", function() {
+							$(this).find("img").toggleClass("hide")
+							$(this).find("video").toggleClass("hide");
+							$(this).find("video")[0].play();
+						})
+					})
+				</script>
+
+			</div>
+		</div>
+		<!--品牌介绍结束-->
+
+		<!--产品展示-->
+
+		<div class="products-sy">
+			<div class="w">
+				<h2>Core product</h2>
+				<h3>— 核心产品 —</h3>
+				<div class="products-item">
+					<ul class="clearfix">
+						<li>
+							<a href="">
+								<img src="img/product_sy_img1.png">
+								<div class="text">
+									<h6>医用物表消毒杀菌系列<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/product_sy_img2.png">
+								<div class="text">
+									<h6>皮肤外用清洁除菌系列 
+<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/product_sy_img3.png">
+								<div class="text">
+									<h6>工厂生产环境流程场景展示
+<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!--产品展示结束-->
+
+		<!--产品分类-->
+
+		<div class="product-ify">
+			<div class="w">
+				<h2>Product classification</h2>
+				<h3>— 产品分类 —</h3>
+				<div class="product-ify-item">
+					<ul class="clearfix">
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img1.jpg">
+								<p>免洗洗手液系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img2.jpg">
+								<p>汽车专用湿纸巾系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img3.jpg">
+								<p>免洗洗手液系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img4.jpg">
+								<p>免洗洗手液系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img5.jpg">
+								<p>汽车专用湿纸巾系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img6.jpg">
+								<p>免洗洗手液系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img7.jpg">
+								<p>汽车专用湿纸巾系列</p>
+							</a>
+						</li>
+						<li class="col-lg-3 col-md-4 col-sm-6">
+							<a href="">
+								<img src="img/product_ify_img8.jpg">
+								<p>免洗洗手液系列</p>
+							</a>
+						</li>
+
+					</ul>
+					<a class="more" href="">MORE+</a>
+				</div>
+
+			</div>
+		</div>
+
+		<!--产品分类结束-->
+
+		<!--成功案例-->
+
+		<div class="sharing visible-lg-block">
+			<div class="w">
+				<h2>Case sharing</h2>
+				<h3>— 案例分享 —</h3>
+				<div class="sharing-main">
+					<ul>					
+						<li class="active">
+							<a href="" class="clearfix">
+								<div class="date-img">
+
+									<div class="img">
+										<img src="img/sharing_img1.jpg">
+									</div>
+									<div class="date fl">
+										7-28
+										<p>2017</p>
+
+									</div>
+								</div>
+
+								<div class="text fr">
+									<h6>广东天河区康复医院皮肤治疗</h6>
+									<p>快速转变，外出户外工作的人员因为环境变化快，无水的时候最无 奈尴尬的，清洁都是户外遇到的现实问题...
+									</p>
+								</div>
+							</a>
+						</li>
+						
+						<li class="">
+							<a href="" class="clearfix">
+								<div class="text fl">
+									<h6>广东天河区康复医院皮肤治疗</h6>
+									<p>快速转变，外出户外工作的人员因为环境变化快，无水的时候最无 奈尴尬的，清洁都是户外遇到的现实问题...
+									</p>
+								</div>
+								<div class="date-img" style="float: right;transform: translateX(35px)">
+									<div class="date" style="float: left">
+										6-18
+										<p>2017</p>
+
+									</div>
+									<div class="img">
+										<img src="img/sharing_img1.jpg">
+									</div>
+									
+								</div>
+
+								
+							</a>
+						</li>
+				
+						<li class="">
+							<a href="" class="clearfix">
+								<div class="date-img">
+
+									<div class="img">
+										<img src="img/sharing_img1.jpg">
+									</div>
+									<div class="date fl">
+										6-18
+										<p>2017</p>
+
+									</div>
+								</div>
+
+								<div class="text fr">
+									<h6>广东天河区康复医院皮肤治疗</h6>
+									<p>快速转变，外出户外工作的人员因为环境变化快，无水的时候最无 奈尴尬的，清洁都是户外遇到的现实问题...
+									</p>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+					<a href="" class="more">
+					</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+						$(function(){
+							$(".sharing li").hover(function(){
+								
+								$(this).toggleClass("active").siblings().removeClass("active");
+							})
+							
+						})
+		</script>
+		<!--成功案例结束-->
+		
+		<!--新闻中心-->
+		<div class="news-sy">
+			<div class="w">
+				<h2>News Center</h2>
+				<h3>— 新闻中心 —</h3>
+				<div class="news-sy-main">
+					<div class="title">
+						<span class="h3">公司新闻</span>
+						<a href="" class="more">MORE+</a>
+					</div>
+					<div class="main-top clearfix">
+						<img src="img/mews_sy_img.png">
+						<div class="text">
+							<div class="text-content">
+								<a href="">
+									<div class="title">
+										净派物表湿巾临床使用指南解读 <span class="date">2017-03-02</span>
+									</div>
+									<div class="content">
+										净派复合双链季铵盐采用德国进口，全国医院采购净派B超探头消毒湿巾。环境物体表面的污染和医院感染之间密不可分，因此环境表面的清洁与消毒日益受到重视，随之应运而生的一个产品--消...
+									</div>
+								</a>
+							</div>
+							<div class="news-li">
+								<ul>
+									<li>
+										<a href="">
+											<span class="text">为什么医院是最洁净的场所也是细菌</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">为什么医院是最洁净的场所也是细菌</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">为什么医院是最洁净的场所也是细菌</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">为什么医院是最洁净的场所也是细菌</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="main-bottom">
+						<div class="main-bottom-item">
+							<div class="title">
+								消毒小常识
+								<a href="" class="more">MORE+</a>
+							</div>
+							<div class="news-li">
+								<ul>
+									<li>
+										<a href="">
+											<span class="text">B超探头消毒口腔牙科材料消毒都用什么消毒？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">物表B超探头为什么要求一次性消毒执行规范？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">医疗废物造成医院感染的风险究竟有多大？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">中国专业的器械物表B超消毒湿巾净派医用湿巾</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">热点新闻物表超声探头消毒全国医院采购净派湿巾</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="main-bottom-item">
+							<div class="title">
+								常见问题
+								<a href="" class="more">MORE+</a>
+							</div>
+							<div class="news-li">
+								<ul>
+									<li>
+										<a href="">
+											<span class="text">B超探头消毒口腔牙科材料消毒都用什么消毒？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">物表B超探头为什么要求一次性消毒执行规范？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">医疗废物造成医院感染的风险究竟有多大？</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">中国专业的器械物表B超消毒湿巾净派医用湿巾</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="text">热点新闻物表超声探头消毒全国医院采购净派湿巾</span>
+											<span class="date">2017-03-02</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--新闻中心结束-->
+		
+		<!--成功案例响应式-->
+
+		<div class="success-bg">
+			<div class="w">
+				<h2>Case sharing</h2>
+				<h3>— 案例分享 —</h3>
+				<div class="products-item">
+					<ul class="clearfix">
+						<li>
+							<a href="">
+								<img src="img/product_sy_img1.png">
+								<div class="text">
+									<h6>医用物表消毒杀菌系列<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/product_sy_img2.png">
+								<div class="text">
+									<h6>皮肤外用清洁除菌系列 
+<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/product_sy_img3.png">
+								<div class="text">
+									<h6>工厂生产环境流程场景展示
+<span>&gt;</span></h6>
+									<p>医用级长效抗菌材料，皮肤创伤、机械创伤及器械的局部消毒处理时涂抹药物消毒剂（辅料棉片），棉质无纺布浸润复合双链季铵盐。</p>
+
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!--成功案例响应式结束-->
+		
+		<!--跳转到商城-->
+		
+		<div class="shopping">
+			<div class="w">
+				<ul class="clearfix">
+					<li><a href=""><img src="img/shopping_img1.png" alt=""></a></li>
+					<li><a href=""><img src="img/shopping_img2.png" alt=""></a></li>
+					<li><a href=""><img src="img/shopping_img3.png" alt=""></a></li>
+					<li><a href=""><img src="img/shopping_img4.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--跳转到商城结束-->
+		
+		<!--认证资质-->
+			<div class="zizhi">
+				<div class="w">
+					<h2>Qualification certification</h2>
+					<h3>— 资质认证 —</h3>
+					<div class="zza">
+						<ul class="clearfix">
+							<li><img src="img/zz_img1.png"></li>
+							<li><img src="img/zz_img2.png"></li>
+							<li><img src="img/zz_img2.png"></li>
+							<li><img src="img/zz_img4.png"></li>
+							<li><img src="img/zz_img5.png"></li>
+						</ul>
+					</div>
+					<div class="zzb">
+						<ul class="clearfix">
+							<li><img src="img/gj_zz1.png"></li>
+							<li><img src="img/gj_zz2.png"></li>
+							<li><img src="img/gj_zz3.png"></li>
+							<li><img src="img/gj_zz4.png"></li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		<!--图片放大效果-->
+		<div class="fiximg">
+			<img src="img/product_sy_img2.jpg">			
+		</div>
+		<script type="text/javascript">
+			if($(document).width() > 1200) {
+				$(".zza li").on("click",function(){
+			
+				$(".fiximg img").attr("src",$(this).find("img").attr("src"))
+				$(".fiximg").css("display","block")
+				
+				})
+				$(".fiximg").on("click",function(){
+					$(this).css("display","none")
+				})
+			}
+			
+			
+		</script>
+		
+		<!--图片放大效果-->
+		
+		<!--认证资质结束-->
+		
+		<!--荣誉客户-->
+		
+		<div class="konghu">
+			<div class="w">
+				<h2>Honorary customer</h2>
+				<h3>— 荣誉客户 —</h3>
+				<div class="main">
+					<ul class="clearfix">
+						<li><img src="img/icon_zz1.png" alt=""></li>
+						<li><img src="img/icon_zz2.png" alt=""></li>
+						<li><img src="img/icon_zz3.png" alt=""></li>
+						<li><img src="img/icon_zz4.png" alt=""></li>
+						<li><img src="img/icon_zz5.png" alt=""></li>
+						<li><img src="img/icon_zz6.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--荣誉客户结束-->
+			
+		
+
+		<!--底部开始-->
+		<div class="footer">
+			<div class="w">
+				<div class="footer-nav">
+					<ul>
+						<li>
+							<a href="">首 页</a>
+						</li>
+						<li>
+							<a href="">公司简介</a>
+						</li>
+						<li>
+							<a href="">产品分类</a>
+						</li>
+						<li>
+							<a href="">感控预防应用</a>
+						</li>
+						<li>
+							<a href="">案例分享</a>
+						</li>
+						<li>
+							<a href="">招贤纳士</a>
+						</li>
+						<li>
+							<a href="">客户服务</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-main clearfix">
+
+					<div class="lianxi">
+						<dl>
+							<dt>24小时客服热线：020-36306018</dt>
+							<dd>联系地址：广州市白云区机场路585号鹏景大厦</dd>
+							<dd>进出口代理：德国基里安贸易公司</dd>
+						</dl>
+					</div>
+					<div class="ewm">
+						<img src="img/erweima.png">
+
+					</div>
+
+				</div>
+				<p class="url">
+					友情链接：
+					<a href="">广州桶装湿纸巾生产厂家</a>
+					技术支持：
+					<a href="">广东烽火</a>
+				</p>
+				<p>Copyright ©2017 保留所有权利。 广州公安网安备 11010502008968 粤ICP备09187967号</p>
+			</div>
+		</div>
+	</body>
+
+</html>
